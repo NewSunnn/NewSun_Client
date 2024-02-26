@@ -1,39 +1,19 @@
 import styled from 'styled-components';
-import theme from '@/theme';
-
-export const Layout = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  max-height: 932px;
-  min-height: 850px;
-  //overflow-y: hidden;
-  overflow-x: hidden;
-  //font-family: 'Pretendard';
-`;
 
 export const Wrapper = styled.div`
-  max-width: 430px;
-  max-height: 932px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  //font-family: 'Pretendard';
-  position: relative;
+  box-sizing: border-box;
+  padding: 0.5rem;
 `;
 
-export const Title = styled.div`
-  max-width: 430px;
-  width: 100vw;
-  height: 50px;
-  background-color: transparent;
-  top: 30px;
-  color: ${theme.colors.textMain};
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 24px;
-  z-index: 1;
+export const Header = styled.div`
+  margin-top: 2rem;
+  width: 100%;
+`;
+
+export const Body = styled.div`
+  width: 100%;
 `;

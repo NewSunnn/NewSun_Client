@@ -1,5 +1,10 @@
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import './main.css';
+import {GlobalStyle} from './style';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <>
+    <GlobalStyle />
+    <App />
+  </>,
+);

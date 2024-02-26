@@ -1,11 +1,10 @@
 // import { useState } from 'react'
-import Container from '@/components/Container';
-import './App.css';
+import Container from '@/components/Conatainer/Container';
 
 const App = () => {
   return (
     <>
-      <Container content={'newSun'}></Container>
+      <Container text="NewSun"></Container>
     </>
   );
 };

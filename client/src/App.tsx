@@ -1,12 +1,16 @@
 // import { useState } from 'react'
-import Container from '@/components/Container';
-import './App.css';
+import Router from './Router';
+import {BrowserRouter} from 'react-router-dom';
+import {ThemeProvider} from 'styled-components';
+import theme from './theme';
 
 const App = () => {
   return (
-    <>
-      <Container content={'newSun'}></Container>
-    </>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </ThemeProvider>
   );
 };
 

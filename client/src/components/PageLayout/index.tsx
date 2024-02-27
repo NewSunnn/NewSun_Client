@@ -3,7 +3,7 @@ import * as S from './PageLayout.styled';
 import {Header} from '../Header';
 
 interface Props {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export const PageLayout = ({children}: Props) => {

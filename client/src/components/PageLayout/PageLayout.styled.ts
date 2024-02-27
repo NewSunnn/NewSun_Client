@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 0.5rem;
+  padding: 0.8rem;
 `;
 
 export const Header = styled.div`

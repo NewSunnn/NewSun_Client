@@ -7,11 +7,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   box-sizing: border-box;
   padding: 0.8rem;
-`;
-
-export const Header = styled.div`
-  margin-top: 2rem;
-  width: 100%;
+  gap: 1.5rem;
 `;
 
 export const Body = styled.div`

@@ -7,9 +7,9 @@ interface fontProps {
 export const Wrapper = styled.div`
   width: 100%;
   display: flex;
-
   justify-content: space-between;
   align-items: center;
+  margin-top: 1.5rem;
 `;
 
 export const TitleWrapper = styled.div`

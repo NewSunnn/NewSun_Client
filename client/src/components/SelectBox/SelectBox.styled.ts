@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   box-sizing: border-box;
   border-radius: 10px;
   background-color: ${theme.colors.sub};
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: ${theme.boxShadow};
 `;
 
 export const ArrowButton = styled.img`

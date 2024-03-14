@@ -5,11 +5,15 @@ interface Props {
   text: string;
 }
 
-export const SelectBox = ({text}: Props) => {
+const handleCategory = () => {
+  console.log('test');
+};
+
+export const SelectBox = (props: Props) => {
   return (
     <S.Wrapper>
-      <S.Title size="20px">{text}</S.Title>
-      <S.ArrowButton src={Arrow} />
+      <S.Title size="20px">{props.text}</S.Title>
+      <S.ArrowButton src={Arrow} onClick={() => handleCategory()} />
     </S.Wrapper>
   );
 };

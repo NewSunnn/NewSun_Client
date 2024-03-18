@@ -2,7 +2,14 @@ import {DefaultTheme} from 'styled-components';
 import 'styled-components';
 
 declare module 'styled-components' {
-  export type DefaultColorKey = 'white' | 'black' | 'main' | 'sub';
+  export type DefaultColorKey =
+    | 'white'
+    | 'black'
+    | 'main'
+    | 'sub'
+    | 'btnDefault'
+    | 'btnSelect'
+    | 'confirm';
 
   export interface DefaultTheme {
     colors: {
@@ -17,6 +24,9 @@ const colors = {
   black: '#000000',
   main: '#f2efe5',
   sub: '#f5f5f5',
+  btnDefault: '#d9d9d9',
+  btnSelect: '#bed1cf',
+  confirm: '#ffe4c9',
 };
 const theme: DefaultTheme = {
   colors,

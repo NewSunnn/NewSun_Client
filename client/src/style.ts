@@ -8,9 +8,12 @@ export const GlobalStyle = createGlobalStyle`
     src: url(${Jua}) format('truetype');
     font-weight: normal;
   } 
+* {
+  font-family: 'Jua';
+
+}
 
 html, body {
-  font-family: 'Jua';
   margin: 0;
 }
 
@@ -26,7 +29,7 @@ html {
 }
 body  {
     width: 393px;
-    height: 852px;
+    height: 100vh;
   }
   #root {
     background-color: #f2efe5;

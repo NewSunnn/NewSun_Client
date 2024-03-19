@@ -1,5 +1,5 @@
 export const CATEGORY_LIST: string[] = [
-  '정치',
+  '정치 / 시사',
   '경제',
   '스포츠',
   '연예',

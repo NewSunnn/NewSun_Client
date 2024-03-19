@@ -11,10 +11,10 @@ export const Button = (props: ButtonProps) => {
       radious={props.radious}
       onClick={props.onClick}
       background={props.background}
-      backgroundColor={props.backgroundColor}
       disabled={props.disabled}
       color={props.color}
       fontSize={props.fontSize}
+      type={props.type}
     >
       {props.children}
     </S.Button>

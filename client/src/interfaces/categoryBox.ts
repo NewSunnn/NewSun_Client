@@ -1,3 +1,3 @@
 export interface CategoryProps {
-  children: React.ReactNode;
+  onClick: () => void;
 }

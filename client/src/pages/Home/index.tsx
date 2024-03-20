@@ -6,16 +6,16 @@ import {useState} from 'react';
 export const Home = () => {
   const [showCategory, setShowCategory] = useState(false);
 
-  const handleSelectBoxClick = () => {
-    setShowCategory(true);
+  const handleBox = () => {
+    setShowCategory(!showCategory);
   };
 
   return (
     <PageLayout>
       {!showCategory ? (
-        <SelectBox text="카테고리 고르기" onClick={handleSelectBoxClick} />
+        <SelectBox text="카테고리 고르기" onClick={handleBox} />
       ) : (
-        <CategoryBox />
+        <CategoryBox onClick={handleBox} />
       )}
     </PageLayout>
   );

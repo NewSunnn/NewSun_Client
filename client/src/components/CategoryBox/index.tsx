@@ -1,9 +1,9 @@
 import * as S from './CategoryBox.styled';
 import {Button} from '../Button';
 import {CATEGORY_LIST} from '@/constants/category';
-// import {CategoryProps} from '@/interfaces/categoryBox';
+import {CategoryProps} from '@/interfaces/categoryBox';
 
-export const CategoryBox = () => {
+export const CategoryBox = (props: CategoryProps) => {
   return (
     <S.Wrapper>
       <S.Title>카테고리를 선택해주세요.</S.Title>
@@ -12,7 +12,7 @@ export const CategoryBox = () => {
           {category}
         </Button>
       ))}
-      <Button width={35} height={20}>
+      <Button width={35} height={20} onClick={props.onClick}>
         이전
       </Button>
       <Button width={35} height={20} type={'confirm'}>

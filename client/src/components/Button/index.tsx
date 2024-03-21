@@ -6,9 +6,10 @@ export const Button = (props: ButtonProps) => {
     <S.Button
       width={props.width}
       height={props.height}
+      state={props.state}
       margin={props.margin}
       padding={props.padding}
-      radious={props.radious}
+      radius={props.radius}
       onClick={props.onClick}
       background={props.background}
       disabled={props.disabled}

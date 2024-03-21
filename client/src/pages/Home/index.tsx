@@ -1,7 +1,8 @@
+import {useState} from 'react';
+import {MainBox} from '@/components/MainBox';
 import {PageLayout} from '@/components/PageLayout';
 import {SelectBox} from '@/components/SelectBox';
 import {CategoryBox} from '@/components/CategoryBox';
-import {useState} from 'react';
 
 export const Home = () => {
   const [showCategory, setShowCategory] = useState(false);
@@ -17,6 +18,8 @@ export const Home = () => {
       ) : (
         <CategoryBox onClick={handleBox} />
       )}
+      <MainBox />
+      <MainBox />
     </PageLayout>
   );
 };
